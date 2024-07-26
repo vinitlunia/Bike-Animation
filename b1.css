@@ -1,0 +1,61 @@
+.main {
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    position: relative;
+    top: 100px;
+    position: absolute;
+    animation: bike 15s infinite linear;
+
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url(./bikes.webp);
+    background-size: 200px;
+    background-repeat: no-repeat;
+
+
+}
+
+
+@keyframes bike {
+    0% {
+        top: 0px;
+        left: 500px;
+        transform: rotate(0deg);
+    }
+    10%{
+        top: 0px;
+        left: 1000px;
+        transform: rotate(90deg);
+    }
+    20%{
+        top: 1000px;
+        left: 1000px;
+        transform: rotate(90deg);
+    }
+    30%{
+        top: 1000px;
+        left: 500px;
+        transform: rotate(180deg);
+    }
+    40%{
+        top: 1000px;
+        left: 0px;
+        transform: rotate(180deg);
+    }
+    50%{
+        top:500px;
+        left: 0px;
+        transform: rotate(90deg);
+    }
+    60%{
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+}

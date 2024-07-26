@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bike animatin</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./rrrr.jpeg) ;
+            background-size: cover ;
+            position: relative;
+            
+            /* top: 300px; */
+            /* box-shadow: black 0px 0px 10px 10px; */
+        }
+
+        .main1 {
+            width: 500px;
+            height: 300px;
+            /* background-color: aqua; */
+            position: relative;
+            top: 500px;
+            animation-name: duke;
+            animation-duration: 5s ;
+            animation-iteration-count: infinite;
+        
+        }
+
+       
+
+        .ty1 {
+            background-image: url(./tyer.png);
+            background-size: cover;
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            bottom: 65px;
+            left: 80px;
+            animation-name: ty1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        .ty2 {
+            background-image: url(./tyer.png);
+            background-size: cover;
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            bottom: 63px;
+            left: 320px;
+            animation-name: ty1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes duke {
+            0%{
+                left: 10px;
+
+            }
+
+            100%{
+                left: 1800px;
+            }
+        }
+
+        .bike {
+            background-image: url(./duke.png);
+            background-size: cover;
+            width: 400px;
+            height: 250px;
+            
+
+            
+        }
+
+        @keyframes ty1 {
+          0% {
+            transform: rotate(306deg);
+          }
+
+          100%{
+            transform: rotate(28800deg);
+          }
+        }
+
+        @keyframes ty2 {
+          0% {
+            transform: rotate(306deg);
+          }
+
+          100%{
+            transform: rotate(28800deg);
+          }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="main">
+            <div class="main1">
+                <center><div class="bike"></div></center>
+                <div class="ty1"></div>
+                <div class="ty2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
